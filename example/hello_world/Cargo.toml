@@ -1,0 +1,9 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Timothy Pratley <timothypratley@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ferris-says = "0.1"
+rpds = "0.6.0"
