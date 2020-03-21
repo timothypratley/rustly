@@ -42,6 +42,7 @@ The goal is to cover all the good parts.
 No packaged builds are provided at this time.
 To use this transpiler you must download the source code.
 
+See [Kalai](https://github.com/echeran/kalai) for a more actively maintained Clojure->Rust transpiler.
 
 ## Rationale
 
@@ -55,7 +56,7 @@ makes me think that having a concise Lisp syntax in that ecosystem would be a go
 
 Contributions in the form of issues, PRs, and suggestions are very welcome.
 
-The interesting bits are in [src/rustly/transpiler.clj](src/rustly/transpiler.clj),
+The interesting bits are in [src/rustly/transpiler.clj](src/rustly/transpile.clj),
 where Clojure forms are translated to Rust code.
 
 
