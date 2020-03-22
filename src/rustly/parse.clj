@@ -1,4 +1,4 @@
-(ns rustly.parser
+(ns rustly.parse
   (:require [clojure.java.io :as io]
             [clojure.tools.reader.edn :as r]
             [clojure.tools.reader.reader-types :as rt]))

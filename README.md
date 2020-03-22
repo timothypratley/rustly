@@ -15,7 +15,7 @@ A Clojure to Rust transpiler.
 Run the example with `./hello_world.sh`
 
 This shell script invokes the transpiler with input file
-[example/hello_world/hello-world.clj](example/hello_world/hello-world.clj),
+[example/hello_world/hello-world.clj](example/hello_world/hello_world.clj),
 produces output file [example/hello_world/src/main.rs](example/hello_world/src/main.rs),
 invokes `cargo run`,
 producing the "Ferris says hello" message:
@@ -34,7 +34,7 @@ producing the "Ferris says hello" message:
 ## Status
 
 This is a science project.
-This software is alpha and subject to changes.
+Rustly is alpha and subject to change.
 Feedback on design and implementation is welcome.
 Only a subset of Clojure is implemented.
 The goal is to cover all the good parts.
@@ -42,23 +42,16 @@ The goal is to cover all the good parts.
 No packaged builds are provided at this time.
 To use this transpiler you must download the source code.
 
-See [Kalai](https://github.com/echeran/kalai) for a more actively maintained Clojure->Rust transpiler.
+See [Kalai](https://github.com/echeran/kalai) for a more comprehensive Clojure transpiler.
 
 ## Rationale
 
-The thing that might be awesome about compiling Clojure to Rust code is that we can target platforms like WASM or native.
-
-Seeing the terrific stuff that Rust to WASM people are producing (https://makepad.github.io/makepad/)
-makes me think that having a concise Lisp syntax in that ecosystem would be a good thing.
+A concise Lisp syntax, backed by Clojure tooling that targets Rust might be a good thing.
 
 
 ## Developing
 
-Contributions in the form of issues, PRs, and suggestions are very welcome.
-
-The interesting bits are in [src/rustly/transpiler.clj](src/rustly/transpile.clj),
-where Clojure forms are translated to Rust code.
-
+Issues, pull requests, and suggestions are very welcome.
 
 ## License
 

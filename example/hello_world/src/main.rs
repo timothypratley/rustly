@@ -4,6 +4,7 @@ use std::io::{stdout, BufWriter};
 fn main() {
 let stdout = stdout();
 let out = b"Hello world";
+let _l = List::new().push_front(1).push_front(2).push_front(3);
 let _v = Vector::new().push_back(1).push_back(2).push_back(3);
 let _m = HashTrieMap::new().insert(b"a", b"b").insert(b"c", b"d");
 let _s = HashTrieSet::new().insert(1).insert(3).insert(2);
