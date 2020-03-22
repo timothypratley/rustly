@@ -29,7 +29,7 @@
 
 (def translate
   "Main entry point for transpilation.
-  Given a Clojure form, produces rust code as a string."
+  Given a Clojure form, normalizes it to rust equivalents."
   (s/rewrite
     (let [!x !y ..?n] . !body ..?m)
     (let [!x (m/app translate !y) ..?n] . (m/app translate !body) ..?m)
